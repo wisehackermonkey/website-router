@@ -17,9 +17,9 @@
 -->
 
 # Summary
-<!-- ### -  *[Quick start](#Quick-start)*
+<!-- ### -  *[Quick start](#Quick-start)* -->
 ### -  *[Installation](#Installation)*
-### -  *[For developers](#For-developers)* -->
+### -  *[For developers](#For-developers)*
 ### -  *[Contributors](#Contributors)*
 ### -  *[License](#License)*
 
@@ -42,6 +42,7 @@
 # For developers
 ### 
 ```bash
+docker run -it --rm -d -p 8080:80 --name web nginx
 ```
 
 -----------------
