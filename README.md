@@ -3,13 +3,19 @@
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <!-- <img src="assets/NNNNNNNNNNNNN" width="400"> -->
-<h2 align="center">how I handle routing the example.com/routeNAME to the different containers on my website orancollins.com</h2>
+<h2 align="center">how I handle routing the example.com/routeNAME to the different containers on my website "oran.business"</h2>
 
 <h4 align="center">uses nginx as the router</h4>
 
 
 # Quick start
 ### __________________
+```
+Pixilate image server: pixel-artist 6451
+Chirp.io 1199
+Blank Page Website 11111
+Remash 7788
+```
 <!-- 
 ##### __________________________
 ```bash
@@ -27,9 +33,29 @@
 
 
 # Installation
+### Docker non compose (testing only)
 ```bash
+cd ~
+git clone https://github.com/wisehackermonkey/website-router.git
+cd website-router
+docker run --rm -it --name web-redirector --net=host -v $PWD/nginx.conf:/etc/nginx/nginx.conf:ro nginx
 ```
 
+
+### Docker  compose (deployment )
+```bash
+cd ~
+git clone https://github.com/wisehackermonkey/website-router.git
+cd website-router
+docker run --restart always -d --name web-redirector --net=host -v $PWD/nginx.conf:/etc/nginx/nginx.conf:ro nginx
+```
+### Docker composer
+```
+cd ~
+git clone https://github.com/wisehackermonkey/website-router.git
+cd website-router
+docker-compose up -d
+```
 <!-- ----------------- -->
 <!-- # Screenshots -->
 <!-- - <img src="assets/_____________" width="400">  -->
