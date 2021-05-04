@@ -68,7 +68,7 @@ docker-compose up -d
 # For developers
 ### 
 ```bash
-docker run -it --rm -d -p 8080:80 --name web nginx
+# docker run -it --rm -d -p 8080:80 --name web nginx
 ```
 
 -----------------
